@@ -145,10 +145,13 @@
   <ItemGroup>
     <ClCompile Include="src\Const.cpp" />
     <ClCompile Include="src\CreateInstantiateObject.cpp" />
+    <ClCompile Include="src\ImplicitExplicitKeyword.cpp" />
     <ClCompile Include="src\InterfacesPureVirtualFunction.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\MemberIntializerList.cpp" />
     <ClCompile Include="src\Mutable.cpp" />
+    <ClCompile Include="src\NewKeyword.cpp" />
+    <ClCompile Include="src\OperatorsAndOperatorOverloading.cpp" />
     <ClCompile Include="src\Static.cpp" />
     <ClCompile Include="src\Ternary.cpp" />
     <ClCompile Include="src\VirtualFunction.cpp" />

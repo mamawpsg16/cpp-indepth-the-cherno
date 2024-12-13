@@ -92,10 +92,16 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\GLFW\lib-vc2015;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -106,12 +112,18 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\GLFW\lib-vc2015;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -120,10 +132,16 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\GLFW\include</AdditionalIncludeDirectories>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\GLFW\lib-vc2015;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -134,28 +152,88 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\GLFW\include</AdditionalIncludeDirectories>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\GLFW\lib-vc2015;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ArrowOperator.cpp" />
+    <ClCompile Include="AutoKeyword.cpp" />
+    <ClCompile Include="Benchmarking.cpp" />
+    <ClCompile Include="Casting.cpp" />
+    <ClCompile Include="CopyingAndCopyConstructor.cpp" />
+    <ClCompile Include="DynamicArrayVector.cpp" />
+    <ClCompile Include="DynamicArrayVectorOptimization.cpp" />
+    <ClCompile Include="DynamicCasting.cpp" />
+    <ClCompile Include="DynamicLibrary.cpp" />
+    <ClCompile Include="FunctionPointers.cpp" />
+    <ClCompile Include="LambdaAnonymousFunction.cpp" />
+    <ClCompile Include="Macros.cpp" />
+    <ClCompile Include="MultidimensionalArrays.cpp" />
+    <ClCompile Include="MultipleReturnValue.cpp" />
+    <ClCompile Include="Namespace.cpp" />
+    <ClCompile Include="NamespaceExample.cpp" />
+    <ClCompile Include="Precompiled.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="PrecompiledMain.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ShardPointerExample.cpp" />
+    <ClCompile Include="Sorting.cpp" />
+    <ClCompile Include="StackVsHeap.cpp" />
+    <ClCompile Include="StaticArrays.cpp" />
+    <ClCompile Include="StructuredBindings.cpp" />
+    <ClCompile Include="Templates.cpp" />
+    <ClCompile Include="Threads.cpp" />
+    <ClCompile Include="Timing.cpp" />
+    <ClCompile Include="TypePunning.cpp" />
+    <ClCompile Include="Unions.cpp" />
+    <ClCompile Include="UniqueAndMakeUniquePtr.cpp" />
+    <ClCompile Include="UnorderedMapExample.cpp" />
+    <ClCompile Include="UsingLibrariesStaticLinking.cpp" />
+    <ClCompile Include="LocalStatic.cpp" />
+    <ClCompile Include="ObjectLifetime.cpp" />
+    <ClCompile Include="SmartPointers.cpp" />
+    <ClCompile Include="SmartPointersExample.cpp" />
     <ClCompile Include="src\Const.cpp" />
     <ClCompile Include="src\CreateInstantiateObject.cpp" />
     <ClCompile Include="src\ImplicitExplicitKeyword.cpp" />
     <ClCompile Include="src\InterfacesPureVirtualFunction.cpp" />
-    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\old-main.cpp" />
     <ClCompile Include="src\MemberIntializerList.cpp" />
     <ClCompile Include="src\Mutable.cpp" />
     <ClCompile Include="src\NewKeyword.cpp" />
     <ClCompile Include="src\OperatorsAndOperatorOverloading.cpp" />
     <ClCompile Include="src\Static.cpp" />
     <ClCompile Include="src\Ternary.cpp" />
+    <ClCompile Include="src\ThisKeyword.cpp" />
     <ClCompile Include="src\VirtualFunction.cpp" />
     <ClCompile Include="src\Visibility.cpp" />
+    <ClCompile Include="VirtualDestructors.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="document.txt" />
+    <Text Include="hello.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

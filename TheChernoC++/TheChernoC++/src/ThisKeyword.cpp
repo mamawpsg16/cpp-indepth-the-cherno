@@ -1,9 +1,15 @@
 #include <iostream>
 
 
-void PrintEntity(const Entity& e);
-// What Does *this Return?
+//void PrintEntity(const Entity& e);
+// 
+// Forward declaration of Entity class
+class Entity; // FORWARD DECLARATION
 
+// Declaration of PrintEntity function
+void PrintEntity(const Entity* e); //FORWARD DECLARATION
+
+// What Does *this Return?
 //Dereferencing this (*this) in the constructor or a member function will return the current object, allowing you to :
 //Pass the object to a function by value.
 //Chain method calls(if returning* this from member functions).
@@ -24,21 +30,23 @@ public:
 		//e->x = x;
 		//e->y = x; // THIS IS EQUALS TO THE ONE ABOVE
 		this->x = x; // Assigning values to the current object's data members
-		this->y = x;
+		this->y = y;
 
-		PrintEntity(*this); // *this gives the actual object(not a pointer to it).
+		PrintEntity(this); // *this gives the actual object(not a pointer to it).
 	}
 
 	int getX() const {
-
+		return x;
 	}
 };
 
-
-void PrintEntity(Entity* e) {
-
+void PrintEntity(const Entity* e) {
+	std::cout << "Entity: (" << e->x << ", " << e->y << ")" << std::endl;
 }
 
-int main() {
-
-}
+//int main() {
+//	Entity entity(1, 2);
+//
+//	Entity* entityPtr = new Entity(5, 10);
+//	PrintEntity(entityPtr);
+//}

@@ -2,7 +2,7 @@
 
 class Printable {
 public:
-	virtual std::string getClassName() = 0;
+	virtual std::string getClassName() = 0; //PURE VIRTUAL FUNCTION
 };
 
 

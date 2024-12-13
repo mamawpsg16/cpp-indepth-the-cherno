@@ -1,0 +1,57 @@
+﻿  Precompiled.cpp
+  ArrowOperator.cpp
+  AutoKeyword.cpp
+  Benchmarking.cpp
+  Casting.cpp
+  CopyingAndCopyConstructor.cpp
+  DynamicArrayVector.cpp
+  DynamicArrayVectorOptimization.cpp
+  DynamicCasting.cpp
+  DynamicLibrary.cpp
+  FunctionPointers.cpp
+  LambdaAnonymousFunction.cpp
+  Macros.cpp
+  MultidimensionalArrays.cpp
+  MultipleReturnValue.cpp
+  Namespace.cpp
+  NamespaceExample.cpp
+  ShardPointerExample.cpp
+  Sorting.cpp
+  StackVsHeap.cpp
+  StaticArrays.cpp
+  Generating Code...
+  Compiling...
+  StructuredBindings.cpp
+  Templates.cpp
+  Threads.cpp
+  Timing.cpp
+  TypePunning.cpp
+  Unions.cpp
+  UniqueAndMakeUniquePtr.cpp
+  UnorderedMapExample.cpp
+  UsingLibrariesStaticLinking.cpp
+  LocalStatic.cpp
+  ObjectLifetime.cpp
+  SmartPointers.cpp
+  SmartPointersExample.cpp
+  Const.cpp
+  CreateInstantiateObject.cpp
+  ImplicitExplicitKeyword.cpp
+  InterfacesPureVirtualFunction.cpp
+  old-main.cpp
+C:\Users\kevin.mensah\Desktop\cpp-indepth-the-cherno\TheChernoC++\TheChernoC++\src\old-main.cpp(7,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  MemberIntializerList.cpp
+  Mutable.cpp
+  Generating Code...
+  Compiling...
+  NewKeyword.cpp
+  OperatorsAndOperatorOverloading.cpp
+  Static.cpp
+  Ternary.cpp
+  ThisKeyword.cpp
+  VirtualFunction.cpp
+  Visibility.cpp
+  VirtualDestructors.cpp
+  Generating Code...
+  PrecompiledMain.cpp
+  TheChernoC++.vcxproj -> C:\Users\kevin.mensah\Desktop\cpp-indepth-the-cherno\TheChernoC++\bin\Win32\Debug\TheChernoC++.exe

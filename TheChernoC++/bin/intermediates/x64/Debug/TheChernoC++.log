@@ -1,2 +1,3 @@
-﻿  OperatorsAndOperatorOverloading.cpp
-  TheChernoC++.vcxproj -> C:\Users\Mensah\Desktop\C++ THE CHERNO\TheChernoC++\bin\x64\Debug\TheChernoC++.exe
+﻿UsingLibrariesStaticLinking.obj : error LNK2019: unresolved external symbol glfwInit referenced in function main
+C:\Users\kevin.mensah\Desktop\cpp-indepth-the-cherno\TheChernoC++\Dependencies\GLFW\lib-vc2015\glfw3.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\kevin.mensah\Desktop\cpp-indepth-the-cherno\TheChernoC++\bin\x64\Debug\TheChernoC++.exe : fatal error LNK1120: 1 unresolved externals
